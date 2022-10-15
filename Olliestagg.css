@@ -1,0 +1,70 @@
+#logo {
+    margin: auto;
+    width: 440px;
+    padding-left: 25px;
+    display: flex;
+    justify-content: center;
+}
+.homePage {
+    background-image: url("backgroundimage.jpg");
+    background-size: cover;
+}
+.portfolioPage {
+    background-color: #1A1A1A;
+    background-size: cover;
+    margin: 0;
+}
+.navBar {
+    text-align: center;
+    width: 100%;
+    padding-top: 100px;
+    word-spacing: 80px;
+}
+.navBar a {
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: 'Space Mono', monospace;
+    text-transform: uppercase;
+}
+.navBarPortfolio {
+    text-align: center;
+    width: 100%;
+    padding-top: 120px;
+    word-spacing: 80px;
+}
+.navBarPortfolio a {
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: 'Space Mono', monospace;
+    text-transform: uppercase;
+}
+.navBar a:hover {
+    color: white;
+}
+* {
+    box-sizing: border-box;
+}
+.portfolio {
+    display: table;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(25 700px);
+}
+.column {
+    float: left;
+    width: 50%;
+    padding: 12px;
+}
+.column img {
+    margin-top: 12px;
+    width: 100%;
+}
+.row::after {
+    content: "";
+    display: table;
+    clear: both
+    
+}
